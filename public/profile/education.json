@@ -1,19 +1,17 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
+            "title": "Aug 2016 - Jun 2020",
             "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
+            "cardSubtitle":"Universidade Paulista - UNIP, São Paulo",
             "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+                "src": "images/education/unip.png"
             }
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "Jul 2022",
+            "cardTitle": "General English",
+            "cardSubtitle":"Twin English Group, London"
         }
     ]
 }

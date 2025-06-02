@@ -2,6 +2,17 @@
     "experiences": [
         {
             "title": "Software Engineer",
+            "subtitle": "FIME Brazil (International Finance Messaging Exchange)",
+            "workType": "Full-time",
+            "workDescription": [
+                "Development of aPI services for finace and payments.",
+                "FastAPI, Git, Gitlab, Docker, Proprietary Libraries.",
+                "Improved comunication by 100%."
+            ],
+            "dateText": "2025"
+        },
+        {
+            "title": "Software Engineer",
             "subtitle": "Stefanini Consultancy in Informatics",
             "workType": "Full-time",
             "workDescription": [

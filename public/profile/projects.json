@@ -1,149 +1,83 @@
 {
-    "projects" : [
+    "projects": [
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "image": "images/projects/bakeflow-poster.png",
+            "title": "BakeFlow: App de Confeitaria",
+            "bodyText": "- Plataforma para gestão de confeitaria.\n- Foco em organização de pedidos e fluxo de produção.",
             "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
                 {
                     "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "href": "https://bakeflow.com.br/"
                 }
             ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
+            "tags": [
+                "Web App",
+                "SaaS",
+                "Confeitaria"
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "image": "images/projects/condominio-leads-poster.png",
+            "title": "Condominio Leads: Hub de Servicos Condominiais",
+            "bodyText": "- Hub digital para conectar servicos e solucoes para condominios.\n- Projeto com foco em captacao e gestao de leads no segmento condominial.",
             "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
                 {
                     "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
+                    "href": "https://beta-condominioleads.netlify.app/"
                 }
             ],
-            "tags" : [
-                "Python",
+            "tags": [
+                "Web Platform",
+                "Leads",
+                "Condominios"
+            ]
+        },
+        {
+            "image": "images/projects/mirach-poster.png",
+            "title": "Mirach: Sistema de Previsoes com Series Temporais",
+            "bodyText": "- Plataforma SaaS de previsao de series temporais.\n- Suporte a multiplos algoritmos como ARIMA, ETS, Prophet, LSTM e modelos de regressao.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/gustavoravel/mirach"
+                }
+            ],
+            "tags": [
                 "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "Data Science",
+                "Time Series"
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "image": "images/projects/showin-poster.png",
+            "title": "ShowIn: Rede Social para Musicos",
+            "bodyText": "- Plataforma social voltada para conexoes e oportunidades no mercado musical.\n- Experiencia focada em networking entre musicos.",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "text": "Live",
+                    "href": "https://showin-demo.netlify.app/"
                 }
             ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
+            "tags": [
+                "Social Network",
+                "Music",
+                "Web App"
             ]
         },
         {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
+            "image": "images/projects/guia-do-notebook-poster.png",
+            "title": "Guia do Notebook: Site de Escolha de Notebook",
+            "bodyText": "- Site para auxiliar usuarios na escolha do notebook ideal.\n- Conteudo direcionado para comparacao e decisao de compra.",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
+                    "text": "Live",
+                    "href": "https://guiadonotebook.netlify.app/"
                 }
             ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
+            "tags": [
+                "Website",
+                "Tech",
+                "Comparativo"
             ]
         }
     ]

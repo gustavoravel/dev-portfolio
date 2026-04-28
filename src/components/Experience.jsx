@@ -1,10 +1,16 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { Container } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
-import Fade from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
+// eslint-disable-next-line import/no-unresolved
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
+// eslint-disable-next-line import/no-unresolved
+import 'react-vertical-timeline-component/style.min.css';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -50,19 +56,39 @@ function Experience(props) {
 
       {data
         ? (
-          <div className="section-content-container">
+          <div
+            className="section-content-container"
+            style={{ '--experience-date-color': theme.color }}
+          >
             <Container>
-              <Timeline
-                lineColor={theme.timelineLineColor}
-              >
-                {data.map((item) => (
-                  <Fade>
-                    <TimelineItem
+              <VerticalTimeline lineColor={theme.timelineLineColor} layout="2-columns">
+                {data.map((item, index) => (
+                  <Fade key={item.title + item.dateText}>
+                    <VerticalTimelineElement
                       key={item.title + item.dateText}
-                      dateText={item.dateText}
-                      dateInnerStyle={{ background: theme.accentColor }}
-                      style={styles.itemStyle}
-                      bodyContainerStyle={{ color: theme.color }}
+                      position={index % 2 === 0 ? 'left' : 'right'}
+                      contentStyle={{
+                        ...styles.itemStyle,
+                        background: theme.cardBackground,
+                        border: `1px solid ${theme.cardBorderColor}`,
+                        color: theme.color,
+                        boxShadow: 'none',
+                      }}
+                      contentArrowStyle={{
+                        borderRight: `7px solid ${theme.cardBackground}`,
+                      }}
+                      dateClassName="experience-date"
+                      iconStyle={{
+                        background: theme.accentColor,
+                        boxShadow: `0 0 0 4px ${theme.background}`,
+                        color: '#fff',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '0.85rem',
+                        fontWeight: 700,
+                      }}
+                      icon={<span>{item.dateText}</span>}
                     >
                       <h2 className="item-title">
                         {item.title}
@@ -94,10 +120,10 @@ function Experience(props) {
                           </div>
                         ))}
                       </ul>
-                    </TimelineItem>
+                    </VerticalTimelineElement>
                   </Fade>
                 ))}
-              </Timeline>
+              </VerticalTimeline>
             </Container>
           </div>
         ) : <FallbackSpinner /> }

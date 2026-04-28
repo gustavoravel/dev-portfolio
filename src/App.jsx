@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import useDarkMode from 'use-dark-mode';
 import AppContext from './AppContext';
 import MainApp from './MainApp';
 import GlobalStyles from './theme/GlobalStyles';
@@ -11,10 +10,25 @@ import { lightTheme, darkTheme } from './theme/themes';
 
 function App() {
   window.matchMedia = null;
-  const darkMode = useDarkMode(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedValue = localStorage.getItem('darkMode');
+    return storedValue === null ? true : storedValue === 'true';
+  });
+
+  const darkMode = useMemo(() => ({
+    value: isDarkMode,
+    toggle: () => {
+      setIsDarkMode((previousValue) => {
+        const nextValue = !previousValue;
+        localStorage.setItem('darkMode', String(nextValue));
+        return nextValue;
+      });
+    },
+  }), [isDarkMode]);
+  const contextValue = useMemo(() => ({ darkMode }), [darkMode]);
 
   return (
-    <AppContext.Provider value={{ darkMode }}>
+    <AppContext.Provider value={contextValue}>
       <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
         <GlobalStyles />
         <div className="App">

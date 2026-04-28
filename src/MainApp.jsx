@@ -31,9 +31,7 @@ function MainApp() {
                   <Route
                     key={route.headerTitle}
                     path={route.path}
-                    component={() => (
-                      <SectionComponent header={route.headerTitle} />
-                    )}
+                    render={() => <SectionComponent header={route.headerTitle} />}
                   />
                 );
               })}

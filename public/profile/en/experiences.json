@@ -1,0 +1,49 @@
+{
+    "experiences": [
+        {
+            "title": "Software Engineer",
+            "subtitle": "FIME Brazil (International Finance Messaging Exchange)",
+            "workType": "Full-time",
+            "workDescription": [
+                "Development of API services for finace and payments.",
+                "FastAPI, Git, Gitlab, Docker, Proprietary Libraries.",
+                "Improved comunication by 100%."
+            ],
+            "dateText": "2025"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "Stefanini Consultancy in Informatics",
+            "workType": "Full-time",
+            "workDescription": [
+                "Development of web services for organizing a library collection.",
+                "MySQL, Django, Django-Haystack, Git, Gitlab, Apache Solr, Docker, Linux On-premises.",
+                "Improved speed by 50%."
+            ],
+            "dateText": "2023"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "Ernst & Young",
+            "workType": "Full-time",
+            "workDescription": [
+                "Development of microservices on energy generation contracts.",
+                "Pandas, Numpy, Matplotlib, Statsmodels, Scipy, Scikit-learn, Postgresql, Django, Django-rest, Git, Sonarqube, Azure DevOps, Pytest, SqlServer, Node.js, React",
+                "Algorithms for time series forecasting",
+                "Accuracy above 72% in predicting the volatility of investment funds"
+            ],
+            "dateText": "2021"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "Ingram Micro",
+            "workType": "Internship",
+            "workDescription": [
+                "Development of recommendation algorithms.",
+                "Python Programming, Statistical Algorithms, Power BI Dashboards",
+                "8 hours to 1 minute to find a suitable a service."
+            ],
+            "dateText": "2018"
+        }
+    ]
+}

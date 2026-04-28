@@ -25,7 +25,28 @@ function App() {
       });
     },
   }), [isDarkMode]);
-  const contextValue = useMemo(() => ({ darkMode }), [darkMode]);
+
+  const [language, setLanguage] = useState(() => {
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage === 'pt' || storedLanguage === 'en') return storedLanguage;
+    return navigator.language.toLowerCase().startsWith('pt') ? 'pt' : 'en';
+  });
+
+  const languageState = useMemo(() => ({
+    value: language,
+    toggle: () => {
+      setLanguage((previousLanguage) => {
+        const nextLanguage = previousLanguage === 'pt' ? 'en' : 'pt';
+        localStorage.setItem('language', nextLanguage);
+        return nextLanguage;
+      });
+    },
+  }), [language]);
+
+  const contextValue = useMemo(
+    () => ({ darkMode, language: languageState }),
+    [darkMode, languageState],
+  );
 
   return (
     <AppContext.Provider value={contextValue}>

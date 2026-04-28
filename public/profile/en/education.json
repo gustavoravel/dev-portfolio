@@ -1,0 +1,17 @@
+{
+    "education":[
+        {
+            "title": "Aug 2016 - Jun 2020",
+            "cardTitle": "B.Tech, Computer Science",
+            "cardSubtitle":"Universidade Paulista - UNIP, São Paulo",
+            "icon" : {
+                "src": "images/education/unip.png"
+            }
+        },
+        {
+            "title": "Jul 2022",
+            "cardTitle": "General English",
+            "cardSubtitle":"Twin English Group, London"
+        }
+    ]
+}

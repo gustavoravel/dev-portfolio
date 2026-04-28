@@ -4,18 +4,20 @@ import FallbackSpinner from './components/FallbackSpinner';
 import NavBarWithRouter from './components/NavBar';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
+import AppContext from './AppContext';
 
 function MainApp() {
+  const { language } = React.useContext(AppContext);
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.routes, {
+    fetch(endpoints.routes(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-  }, []);
+  }, [language.value]);
 
   return (
     <div className="MainApp">

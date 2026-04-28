@@ -13,6 +13,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
+import AppContext from '../AppContext';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/experience.css';
 
@@ -39,16 +40,17 @@ const styles = {
 function Experience(props) {
   const theme = useContext(ThemeContext);
   const { header } = props;
+  const { language } = useContext(AppContext);
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.experiences, {
+    fetch(endpoints.experiences(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res.experiences))
       .catch((err) => err);
-  }, []);
+  }, [language.value]);
 
   return (
     <>

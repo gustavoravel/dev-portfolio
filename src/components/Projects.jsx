@@ -3,6 +3,7 @@ import { Container, Row, Button } from 'react-bootstrap';
 import { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
+import AppContext from '../AppContext';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import ProjectCard from './projects/ProjectCard';
@@ -20,17 +21,18 @@ const styles = {
 function Projects(props) {
   const theme = useContext(ThemeContext);
   const { header } = props;
+  const { language } = useContext(AppContext);
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    fetch(endpoints.projects, {
+    fetch(endpoints.projects(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-  }, []);
+  }, [language.value]);
   const numberOfItems = showMore && data ? data.length : 6;
   return (
     <>
@@ -54,7 +56,7 @@ function Projects(props) {
                   variant={theme.bsSecondaryVariant}
                   onClick={() => setShowMore(true)}
                 >
-                  show more
+                  {data?.showMoreText || 'Show more'}
                 </Button>
                 )}
             </Container>

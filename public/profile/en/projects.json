@@ -1,0 +1,85 @@
+{
+    "showMoreText": "Show more",
+    "projects": [
+        {
+            "image": "images/projects/bakeflow-poster.png",
+            "title": "BakeFlow: Bakery App",
+            "bodyText": "- Platform focused on bakery management.\n- Organized order handling and production workflow.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://bakeflow.com.br/"
+                }
+            ],
+            "tags": [
+                "Web App",
+                "SaaS",
+                "Bakery"
+            ]
+        },
+        {
+            "image": "images/projects/condominio-leads-poster.png",
+            "title": "Condominio Leads: Condo Services Hub",
+            "bodyText": "- Digital hub to connect services and solutions for condominiums.\n- Focused on lead generation and management for the condo market.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://beta-condominioleads.netlify.app/"
+                }
+            ],
+            "tags": [
+                "Web Platform",
+                "Leads",
+                "Condominiums"
+            ]
+        },
+        {
+            "image": "images/projects/mirach-poster.png",
+            "title": "Mirach: Time Series Forecasting System",
+            "bodyText": "- SaaS platform for time series forecasting.\n- Supports multiple algorithms such as ARIMA, ETS, Prophet, LSTM and regression models.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/gustavoravel/mirach"
+                }
+            ],
+            "tags": [
+                "Django",
+                "Data Science",
+                "Time Series"
+            ]
+        },
+        {
+            "image": "images/projects/showin-poster.png",
+            "title": "ShowIn: Social Network for Musicians",
+            "bodyText": "- Social platform focused on opportunities in the music market.\n- Experience designed for musician networking.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://showin-demo.netlify.app/"
+                }
+            ],
+            "tags": [
+                "Social Network",
+                "Music",
+                "Web App"
+            ]
+        },
+        {
+            "image": "images/projects/guia-do-notebook-poster.png",
+            "title": "Notebook Guide: Laptop Selection Website",
+            "bodyText": "- Website that helps users choose the ideal laptop.\n- Content focused on comparison and buying decisions.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://guiadonotebook.netlify.app/"
+                }
+            ],
+            "tags": [
+                "Website",
+                "Tech",
+                "Comparison"
+            ]
+        }
+    ]
+}

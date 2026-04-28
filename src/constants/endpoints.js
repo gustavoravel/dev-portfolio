@@ -1,13 +1,17 @@
+const supportedLanguages = ['en', 'pt'];
+
+const getLanguageFolder = (language) => (supportedLanguages.includes(language) ? language : 'en');
+
 const endpoints = {
-  navbar: 'profile/navbar.json',
-  routes: 'profile/routes.json',
-  home: 'profile/home.json',
-  social: 'profile/social.json',
-  about: 'profile/about.json',
-  skills: 'profile/skills.json',
-  education: 'profile/education.json',
-  experiences: 'profile/experiences.json',
-  projects: 'profile/projects.json',
+  navbar: (language) => `profile/${getLanguageFolder(language)}/navbar.json`,
+  routes: (language) => `profile/${getLanguageFolder(language)}/routes.json`,
+  home: (language) => `profile/${getLanguageFolder(language)}/home.json`,
+  social: (language) => `profile/${getLanguageFolder(language)}/social.json`,
+  about: (language) => `profile/${getLanguageFolder(language)}/about.json`,
+  skills: (language) => `profile/${getLanguageFolder(language)}/skills.json`,
+  education: (language) => `profile/${getLanguageFolder(language)}/education.json`,
+  experiences: (language) => `profile/${getLanguageFolder(language)}/experiences.json`,
+  projects: (language) => `profile/${getLanguageFolder(language)}/projects.json`,
 };
 
 export default endpoints;

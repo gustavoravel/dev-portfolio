@@ -1,0 +1,83 @@
+{
+    "intro": "Gosto de aprender coisas novas e experimentar novas tecnologias.\nEstas sao algumas das principais linguagens, tecnologias, ferramentas e plataformas com as quais ja trabalhei:",
+    "skills": [{
+     
+            "title": "Linguagens e Bancos de Dados",
+            "items" : [
+     
+                {
+                    "icon": "images/skills/python.png",
+                    "title": "Python"
+                },
+                {
+                    "icon": "images/skills/js.png",
+                    "title": "JavaScript"
+                },
+                {
+                    "icon": "images/skills/mysql.png",
+                    "title": "MySQL"
+                },
+                {
+                    "icon": "images/skills/postgresql.png",
+                    "title": "PostgreSQL"
+                }
+        ]},
+        {
+            "title": "Frameworks e Tecnologias",
+            "items" : [
+                
+                {
+                    "icon": "images/skills/django.png",
+                    "title": "Django"
+                },
+                {
+                    "icon": "images/skills/fastapi.png",
+                    "title": "FastAPI"
+                },
+                {
+                    "icon": "images/skills/react.png",
+                    "title": "React"
+                },
+                {
+                    "icon": "images/skills/nodejs.png",
+                    "title": "Nodejs"
+                }
+            ]
+        },
+        {
+            "title" : "Ferramentas e Plataformas",
+            "items": [
+                
+                {
+                    "icon": "images/skills/git.png",
+                    "title": "Git"
+                },
+                {
+                    "icon": "images/skills/docker.png",
+                    "title": "Docker"
+                },
+                {
+                    "icon": "images/skills/apache.png",
+                    "title": "Apache"
+                }
+            ]
+        },
+        {
+            "title" : "Nuvem",
+            "items": [
+                
+                {
+                    "icon": "images/skills/aws.png",
+                    "title": "AWS"
+                },
+                {
+                    "icon": "images/skills/azure.png",
+                    "title": "Azure"
+                },
+                {
+                    "icon": "images/skills/gcp.png",
+                    "title": "GCP"
+                }
+            ]
+        }
+]}

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
 import { Container } from 'react-bootstrap';
+import AppContext from '../AppContext';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -20,6 +21,7 @@ const styles = {
 };
 
 function Skills(props) {
+  const { language } = useContext(AppContext);
   const { header } = props;
   const [data, setData] = useState(null);
 
@@ -30,13 +32,13 @@ function Skills(props) {
   );
 
   useEffect(() => {
-    fetch(endpoints.skills, {
+    fetch(endpoints.skills(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-  }, []);
+  }, [language.value]);
 
   return (
     <>

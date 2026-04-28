@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
+import AppContext from '../AppContext';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -25,6 +26,7 @@ const styles = {
 };
 
 function About(props) {
+  const { language } = useContext(AppContext);
   const { header } = props;
   const [data, setData] = useState(null);
 
@@ -35,13 +37,13 @@ function About(props) {
   );
 
   useEffect(() => {
-    fetch(endpoints.about, {
+    fetch(endpoints.about(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-  }, []);
+  }, [language.value]);
 
   return (
     <>

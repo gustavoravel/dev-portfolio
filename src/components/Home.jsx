@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Typewriter from 'typewriter-effect';
 import { Fade } from 'react-awesome-reveal';
+import AppContext from '../AppContext';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -22,23 +23,27 @@ const styles = {
 };
 
 function Home() {
+  const { language } = useContext(AppContext);
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.home, {
+    fetch(endpoints.home(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-  }, []);
+  }, [language.value]);
 
   return data ? (
     <Fade>
       <div style={styles.mainContainer}>
         <h1 style={styles.nameStyle}>{data?.name}</h1>
         <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+          <h2 style={styles.inlineChild}>
+            {data?.introPrefix || 'I\'m'}
+            &nbsp;
+          </h2>
           <Typewriter
             options={{
               loop: true,

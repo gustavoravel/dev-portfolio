@@ -1,0 +1,85 @@
+{
+    "showMoreText": "Mostrar mais",
+    "projects": [
+        {
+            "image": "images/projects/bakeflow-poster.png",
+            "title": "BakeFlow: App de Confeitaria",
+            "bodyText": "- Plataforma para gestão de confeitaria.\n- Foco em organização de pedidos e fluxo de produção.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://bakeflow.com.br/"
+                }
+            ],
+            "tags": [
+                "Web App",
+                "SaaS",
+                "Confeitaria"
+            ]
+        },
+        {
+            "image": "images/projects/condominio-leads-poster.png",
+            "title": "Condominio Leads: Hub de Servicos Condominiais",
+            "bodyText": "- Hub digital para conectar servicos e solucoes para condominios.\n- Projeto com foco em captacao e gestao de leads no segmento condominial.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://beta-condominioleads.netlify.app/"
+                }
+            ],
+            "tags": [
+                "Web Platform",
+                "Leads",
+                "Condominios"
+            ]
+        },
+        {
+            "image": "images/projects/mirach-poster.png",
+            "title": "Mirach: Sistema de Previsoes com Series Temporais",
+            "bodyText": "- Plataforma SaaS de previsao de series temporais.\n- Suporte a multiplos algoritmos como ARIMA, ETS, Prophet, LSTM e modelos de regressao.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/gustavoravel/mirach"
+                }
+            ],
+            "tags": [
+                "Django",
+                "Data Science",
+                "Time Series"
+            ]
+        },
+        {
+            "image": "images/projects/showin-poster.png",
+            "title": "ShowIn: Rede Social para Musicos",
+            "bodyText": "- Plataforma social voltada para conexoes e oportunidades no mercado musical.\n- Experiencia focada em networking entre musicos.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://showin-demo.netlify.app/"
+                }
+            ],
+            "tags": [
+                "Social Network",
+                "Music",
+                "Web App"
+            ]
+        },
+        {
+            "image": "images/projects/guia-do-notebook-poster.png",
+            "title": "Guia do Notebook: Site de Escolha de Notebook",
+            "bodyText": "- Site para auxiliar usuarios na escolha do notebook ideal.\n- Conteudo direcionado para comparacao e decisao de compra.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://guiadonotebook.netlify.app/"
+                }
+            ],
+            "tags": [
+                "Website",
+                "Tech",
+                "Comparativo"
+            ]
+        }
+    ]
+}

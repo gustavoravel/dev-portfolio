@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/gustavo-ravel/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/gustavoravel"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:ravelsoares.lima@gmail.com"
+        }
+    ]
+}

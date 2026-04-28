@@ -1,0 +1,49 @@
+{
+    "experiences": [
+        {
+            "title": "Software Engineer",
+            "subtitle": "FIME Brazil (International Finance Messaging Exchange)",
+            "workType": "Tempo integral",
+            "workDescription": [
+                "Desenvolvimento de servicos de API para financas e pagamentos.",
+                "FastAPI, Git, Gitlab, Docker e bibliotecas proprietarias.",
+                "Melhoria de 100% na comunicacao entre sistemas."
+            ],
+            "dateText": "2025"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "Stefanini Consultancy in Informatics",
+            "workType": "Tempo integral",
+            "workDescription": [
+                "Desenvolvimento de servicos web para organizacao de acervo bibliografico.",
+                "MySQL, Django, Django-Haystack, Git, Gitlab, Apache Solr, Docker e Linux on-premises.",
+                "Melhoria de 50% em performance."
+            ],
+            "dateText": "2023"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "Ernst & Young",
+            "workType": "Tempo integral",
+            "workDescription": [
+                "Desenvolvimento de microsservicos para contratos de geracao de energia.",
+                "Pandas, Numpy, Matplotlib, Statsmodels, Scipy, Scikit-learn, PostgreSQL, Django, Django REST, Git, Sonarqube, Azure DevOps, Pytest, SQL Server, Node.js e React.",
+                "Criacao de algoritmos para previsao de series temporais.",
+                "Acuracia acima de 72% na previsao de volatilidade de fundos de investimento."
+            ],
+            "dateText": "2021"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "Ingram Micro",
+            "workType": "Estagio",
+            "workDescription": [
+                "Desenvolvimento de algoritmos de recomendacao.",
+                "Programacao em Python, algoritmos estatisticos e dashboards em Power BI.",
+                "Reducao do tempo de busca de 8 horas para 1 minuto para encontrar servicos adequados."
+            ],
+            "dateText": "2018"
+        }
+    ]
+}

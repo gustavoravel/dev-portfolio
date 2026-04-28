@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
 import { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
+import AppContext from '../AppContext';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/education.css';
@@ -12,12 +13,13 @@ import '../css/education.css';
 function Education(props) {
   const theme = useContext(ThemeContext);
   const { header } = props;
+  const { language } = useContext(AppContext);
   const [data, setData] = useState(null);
   const [width, setWidth] = useState('50vw');
   const [mode, setMode] = useState('VERTICAL_ALTERNATING');
 
   useEffect(() => {
-    fetch(endpoints.education, {
+    fetch(endpoints.education(language.value), {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -37,7 +39,7 @@ function Education(props) {
     } else {
       setWidth('50vw');
     }
-  }, []);
+  }, [language.value]);
 
   return (
     <>
